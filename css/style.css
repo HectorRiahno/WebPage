@@ -1,0 +1,116 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+  }
+  nav {
+    background-color: #1e1e1e;
+    padding: 20px;   
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav li {
+    display:inline-block;
+    margin-right: 20px;
+  }
+  nav a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  header {
+    background-color: #6a6c8b;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+  }
+  main {
+    padding: 40px;
+  }
+  .seccion1 , .seccion2 {
+    margin-bottom: 40px;
+  }
+  h1, h2 {
+    font-weight: 300;
+  }
+  .galeria{
+    display: flex;
+    width: 100%;
+    height: 450px;
+  }
+  .galeria img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+  }
+  .galeria img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(130%);
+  }
+  p {
+   line-height: 1.5;
+  }
+
+  /* #################################     PIE DE PAGINA  ######################### */
+  footer {
+    
+    background-color: #6a6c8b;
+    padding: 30px 0;
+    font-family: Arial, sans-serif;
+ }
+  .footer-row {
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+  /* flex-wrap: wrap; */
+ }
+ .footer-column {
+    flex-basis: 33.33%;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+ }
+ h4 {
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+ }
+
+ .footer-column p  {
+    color: #faf4f4;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+ a {
+    color: #ffffff;
+    text-decoration: none;
+ }
+ a:hover {
+    color: #333;
+ }
+ .social-media {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    /* margin: 0; */
+    padding: 0;
+ }
+ .social-media li {
+    margin: 0 10px;
+ }
+ .social-media a {
+    color: #c9c8c8;
+    font-size: 20px;
+    transition: color 0.5s;
+ }
+ .social-media a:hover {
+    color: #333;
+ }
+
+ 
