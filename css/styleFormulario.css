@@ -1,23 +1,44 @@
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
   }
   body{
-    background-color:#1e1e1e ;
+    background-color:#ffffff ;
   }
   
-  
+  .decoracion{
+    background-color: #6a6c8b;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  .decoracion2{
+    border-top: 2px solid black;
+  }
+  .decoracion .namelogo{
+    color: #fff;
+    font-size: 20px;
+  }
+  .logo img{
+    height: 50px;
+    width: 50px;
+  }
   form {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 70px auto;
+    /* border-radius: 20px; */
     /* background-color: #1e1e1e; */
     padding: 20px;
-    color: #fff;
+    color: #000000;
+    /* border:  solid black; */
   }
   
-  h2 {
-    font-size: 24px;
+  .titulo{
+    font-size: 20px;
     text-align: center;
+    margin-bottom: 30px;
   }
   
   .form-group {
@@ -35,16 +56,17 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #2b2b2b;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     font-size: 16px;
     margin-top: 5px;
     resize: none;
+    border-bottom: 2px solid black;
   }
-  input:focus {
+  /* input:focus {
     border: 2px solid #000;
     background: #1b1919;
-  }
+  } */
   
   button{
     background-color: #007acc;

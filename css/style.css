@@ -1,32 +1,84 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-  }
-  nav {
-    background-color: #1e1e1e;
-    padding: 20px;   
-  }
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  nav li {
-    display:inline-block;
-    margin-right: 20px;
-  }
+*{
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background-color: #6a6c8b;
+}
+body::-webkit-scrollbar {
+  width: 8px; 
+}
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+nav{
+  background-color:#6a6c8b;
+  padding: 20px;
+}
+nav ul{
+  display: flex;
+  justify-content: space-evenly;
+  background-color:#333;
+  padding: 20px;
+  border-radius: 20px;
+}
+ul li{
+  list-style: none;
+}
   nav a {
     color: #ffffff;
     text-decoration: none;
   }
-  header {
-    background-color: #6a6c8b;
-    color: #fff;
-    padding: 50px;
-    text-align: center;
-  }
+  nav a:hover {
+    color: #6a6c8b;
+ }
+ #icono {
+  transition: 0.8s ease; 
+}
+
+#menu-categorias {
+  display: none; 
+  /* list-style: none; */
+}
+
+#icono:hover {
+  transform: rotate(360deg); 
+  cursor: pointer;
+}
+
+/* #############################--------------- HEADER --------------########################### */
+.header-padre {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* gap: 10px;  */
+}
+.hijo-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .hijo-div p{
+  border-bottom: 2px  solid #333;
+ }
+
+.hijo-div img {
+  max-width: 400px;
+}
+
+  /* ####### MAIN ###### */
   main {
     padding: 40px;
+  }
+  #main{
+    background-color: #fff;
   }
   .seccion1 , .seccion2 {
     margin-bottom: 40px;
@@ -47,10 +99,9 @@ body {
     transition: .5s ease;
   }
   .galeria img:hover{
-    cursor: crosshair;
     width: 300px;
     opacity: 1;
-    filter: contrast(130%);
+    filter: contrast(120%);
   }
   p {
    line-height: 1.5;
@@ -112,5 +163,39 @@ body {
  .social-media a:hover {
     color: #333;
  }
+  
+ /* ####################################### */
+ @media (max-width: 500px) {
+  .header-padre{
+    display: inline;
+  }
+  .hijo-div{
+    display: inline;
+  }
+  .hijo-div img{
+    width: 300px;
+    margin: auto 40px;
+    
+  }
+  .hijo-div p{
+    width: 80%;
+    margin: auto 10%;
+  }
+  .galeria {
+    height: auto;
+    flex-wrap: wrap;
+  }
 
- 
+  .galeria img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+  }
+  .footer-row {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    margin-bottom: 20px;
+  }
+}
